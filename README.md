@@ -14,6 +14,6 @@ Languages used each day:
 9. **Julia** 🔴🟢🟣
 10. **GO** 👾
 11. **Ruby** 💎
-12. **D** 📕
+12. **R** 📘
 13. **Erlang** ☎️
 14. **Matlab** 📐
