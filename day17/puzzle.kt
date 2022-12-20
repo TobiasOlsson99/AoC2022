@@ -6,9 +6,7 @@ val rocks = arrayOf(
     arrayOf(byteArrayOf(0,1,0),byteArrayOf(1,1,1),byteArrayOf(0,1,0)),
     arrayOf(byteArrayOf(0,0,1),byteArrayOf(0,0,1),byteArrayOf(1,1,1)),
     arrayOf(byteArrayOf(1,1,1,1)),
-    arrayOf(byteArrayOf(1,1),byteArrayOf(1,1))
-)
-
+    arrayOf(byteArrayOf(1,1),byteArrayOf(1,1)))
 class Simulation(moves : ByteArray) {
     private var moves : ByteArray = moves
     private var playingField : Array<ByteArray> = Array(7){_ -> ByteArray(1000)}
@@ -17,13 +15,11 @@ class Simulation(moves : ByteArray) {
     private var currentHeight : Int = 0
     private var yOffset : Int = 0
     private var repeats : Pair<Int,Int> = Pair(-1,-1)
-
     public fun getHeight(turns : Int): Int{
         this.resetSimulation()
         this.simulate(turns)
         return this.currentHeight
     }
-
     public fun getHeight(turns : Long): Long{
         this.findRepeat()
         val (first,second) = this.repeats
@@ -43,7 +39,6 @@ class Simulation(moves : ByteArray) {
 
         return firstHeight + repeatingHeight * repeatsAmount + lastHeight
     }
-
     private fun tryMove(rock : Int, x0 : Int, y0: Int): Boolean{
         if (x0 + rocks[rock].size > 7 || x0 < 0) return false
         if (y0 + rocks[rock][0].size > 1000 || y0 < 0) return false
@@ -56,7 +51,6 @@ class Simulation(moves : ByteArray) {
         }
         return true;
     }
-
     private fun simulateRock(rock : Int, yStart : Int): Int{
         var y : Int = yStart
         var x : Int = 2
@@ -81,7 +75,6 @@ class Simulation(moves : ByteArray) {
             }
         }
     }
-
     private fun simulate(turns : Int){
         val maxTurn = this.turn + turns
         while (this.turn < maxTurn){
@@ -95,7 +88,6 @@ class Simulation(moves : ByteArray) {
             this.turn += 1
         }
     }
-
     private fun findRepeat(){
         val repeats : MutableList<Triple<Int,Int,Int>> = mutableListOf()
         while (true){
@@ -117,7 +109,6 @@ class Simulation(moves : ByteArray) {
             this.turn += 1
         }
     }
-
     private fun trimPlayingField(){
         if (this.currentHeight - this.yOffset > 900){
             this.yOffset += 500
@@ -129,7 +120,6 @@ class Simulation(moves : ByteArray) {
             }
         }
     }
-
     private fun resetSimulation(){
         this.playingField = Array(7){_ -> ByteArray(1000)}
         this.yOffset = 0
@@ -138,10 +128,7 @@ class Simulation(moves : ByteArray) {
         this.turn = 1
         this.repeats = Pair(-1,-1)
     }
-
 }
-
-
 fun main() {
     val moves = File("input.txt").readLines().first().toByteArray()
     val sim = Simulation(moves)
