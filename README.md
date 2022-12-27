@@ -17,3 +17,10 @@ Languages used each day:
 12. **R** 📘
 13. **Erlang** ☎️
 14. **Matlab** 📐
+15. **Scala** 
+17. **Kotlin**
+18. **F#**
+19. **Nim**
+20. **D**
+21. **Lua**
+22. **Rust**
