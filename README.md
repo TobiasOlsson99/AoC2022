@@ -1,4 +1,4 @@
-# 🎄 Advent of Code 2022 🎄 - in 14 different languages 🌍
+# 🎄 Advent of Code 2022 - in 14 different languages 🌍
 
 
 Languages used each day:
@@ -17,10 +17,11 @@ Languages used each day:
 12. **R** 📘
 13. **Erlang** ☎️
 14. **Matlab** 📐
-15. **Scala** 
-17. **Kotlin**
-18. **F#**
-19. **Nim**
-20. **D**
-21. **Lua**
-22. **Rust**
+15. **Scala** 🟥
+16. **C#** 🟣
+17. **Kotlin** 🤖
+18. **F#** 💠
+19. **Nim** 👑
+20. **D** 🧲
+21. **Lua** 🧿
+22. **Rust** 🦀
