@@ -101,7 +101,7 @@ fn finalPosition(map: &Vec<Vec<char>>, mapSegments: &Vec<MapSegment>, path: &Str
             }
         }
     }
-    (dx-1)*dx + (2-dy)*dy + 4*(x+1) + 1000*(y+1)
+    (dx-1)*dx + (2-dy)*dy.abs() + 4*(x+1) + 1000*(y+1)
 }
 
 fn getCombinations(edges: &Vec<(usize,i32)>) -> Vec<Vec<(usize,i32,usize,i32)>>{
