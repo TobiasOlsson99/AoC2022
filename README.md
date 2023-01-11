@@ -1,7 +1,7 @@
-# 🎄 Advent of Code 2022 - in 14 different languages 🌍
+# 🎄 Advent of Code 2022 - in 25 different languages 🌍
 
 
-Languages used each day:
+Language used each day:
 
 1. **Python** 🐍
 2. **Java** ☕
@@ -25,3 +25,6 @@ Languages used each day:
 20. **D** 🧲
 21. **Lua** 🧿
 22. **Rust** 🦀
+23. **Groovy** 🎷
+24.
+25.
