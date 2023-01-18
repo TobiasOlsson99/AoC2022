@@ -26,5 +26,5 @@ Language used each day:
 21. **Lua** 🧿
 22. **Rust** 🦀
 23. **Groovy** 🎷
-24.
+24. **Objective-C**
 25.
